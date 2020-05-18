@@ -11,7 +11,7 @@ Import Google Fonts
 --------------------*/
 
 /* main font for menu. */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400|Raleway:200,300,400,500,700,900);
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;500&display=swap');
 
 /*--------------------
 1. General
@@ -19,7 +19,7 @@ Import Google Fonts
 
 body {
 	margin: 0px;
-    font-family: "Raleway", Sans-serif;
+    font-family: 'Spartan', sans-serif;
     height: auto;
 }
 
@@ -30,20 +30,20 @@ h5,
 h6 {
 	font-weight: 200;
 	letter-spacing: 0.4px;
-	font-family: "Raleway", Sans-serif;
+    font-family: 'Spartan', sans-serif;
 	color: #232323;
 }
 
 h3 {
     font-weight: 200;
 	letter-spacing: 0.4px;
-    font-family: "Raleway", Sans-serif;
+    font-family: 'Spartan', sans-serif;
     font-weight: bold;
 	color: #232323;
 }
 
 p {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Spartan', sans-serif;
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 28px;
@@ -98,6 +98,12 @@ section {
 .navbar-default {
 	background-color: transparent;
     border-color: transparent;
+    position:fixed; /* 絕對定位，fixed是相對於瀏覽器窗口定位。 */
+    top:0; /* 距離窗口頂部距離 */
+    left:0; /* 距離窗口左邊的距離 */
+    width:100%; /* 寬度設置爲100% */
+    height:40px; /* 高度 */
+    z-index:100; /* 層疊順序，數值越大就越高。頁面滾動的時候就不會被其他內容所遮擋。 */
 }
 .navbar-default .navbar-brand {
     color: #000;
@@ -110,7 +116,7 @@ section {
     border-color: rgba(255,255,255,.02);
 }
 .navbar-default .navbar-toggle {
-	background-color: transparent;
+	background-color: #FFF;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #000
@@ -119,11 +125,11 @@ section {
 	background-color: transparent;
 }
 .navbar-default .nav li a {
-    font-family: "Roboto",sans-serif;
+    font-family: 'Spartan', sans-serif;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #000;
     border-bottom: 0px solid;
     border-color: #000;
@@ -191,16 +197,17 @@ section {
 }
 
 .section-title h2 {
-    font-size: 45px;
+    font-size: 36px;
     font-weight: bold;
-	text-transform: uppercase;
+    text-transform: none;
+    line-height: 50px;
 }
 
 .section-title p {
 	font-size: 18px;
     font-weight: 300;
     margin-top: 2%;
-	line-height: 35px;
+	line-height: 20px;
 	text-align: left;
 }
 
@@ -403,7 +410,7 @@ figure.effect-bubba h2 {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
-	padding-top: 30%;
+    margin-top: 50%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
@@ -464,7 +471,7 @@ figure.effect-bubba:hover p {
 	font-weight: 500;
 	line-height: 32px;
 	padding: 47px;
-	font-family: "Raleway";
+	font-family: 'Spartan', sans-serif;
 	margin: 0;
 	background-color: #F9F9F9;
 }
@@ -544,14 +551,14 @@ section#contact .form-group input, section#contact .form-group textarea {
 --------------------*/
 
 footer {
-    padding: 1% 13% 5% 13%; 
+    padding: 1% 13% 2% 13%; 
 }
 
 footer p {
     color: #000;
     margin: 0;
-    font-family: "Raleway", Sans-serif;
-    font-size: 16px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1.6px;
@@ -652,7 +659,7 @@ font-size: 11px;
     color: #fff;
      background-color: #726FB9;
     border-color: #726FB9;
-    font-family: "Robot",sans-serif;
+    font-family: 'Spartan', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
